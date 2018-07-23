@@ -1,0 +1,10 @@
+def euclid(short_side, long_side):
+    while long_side % short_side != 0:
+        mod = long_side % short_side
+        long_side = short_side
+        short_side = mod
+    return short_side
+
+
+if __name__ == '__main__':
+    print(euclid(12, 42))
